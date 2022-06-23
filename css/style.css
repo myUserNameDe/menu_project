@@ -505,7 +505,7 @@ main {
   }
 }
 .alivio .alivio__img {
-  width: 100%;
+  max-width: 100%;
 }
 
 ._text__alivio {
@@ -524,6 +524,7 @@ main {
       -ms-flex-align: center;
           align-items: center;
   background-color: #01996d;
+  border: 1px solid #01996d;
   border-radius: 4px;
 }
 ._button ._link__button {
@@ -535,17 +536,20 @@ main {
   color: #fff;
 }
 
-.alivio__wrap .alivio__container {
+.alivio__wrap {
+  position: relative;
+}
+.alivio__wrap .alivio__container .alivio__column {
   position: absolute;
-  top: 30%;
+  top: 16%;
 }
 @media (max-width: 992px) {
-  .alivio__wrap .alivio__container {
-    top: 20%;
+  .alivio__wrap .alivio__container .alivio__column {
+    top: 14%;
   }
 }
 @media (max-width: 768px) {
-  .alivio__wrap .alivio__container {
+  .alivio__wrap .alivio__container .alivio__column {
     position: inherit;
     top: 0;
   }
